@@ -177,28 +177,24 @@ i a {
 @media screen and (max-width: 576px) {
     header {
         background-size: contain;
-        max-height: 480px;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
     header {
         background-size: contain;
-        max-height: 480px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     header {
         background-size: contain;
-        max-height: 480px;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     header {
         background-size: contain;
-        max-height: 480px;
     }
 }
 /*MEDIA QUERIS*/
