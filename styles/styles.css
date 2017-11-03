@@ -1,3 +1,10 @@
+/*do wykonania:*/
+/*1. update bootstrapa do wersji 4*/
+/*2. imie i nazwisko oraz junior... maja byc na tym samym poziomie*/
+/*3. upozadkowac kod -> podzielic na sekcje w css*/
+/*4. weryfikacja czy RWD dziala poprawnie*/
+/*5. selektory do id zmienić na klasy*/
+
 body {
     font-family: "Raleway", sans-serif;
 }
@@ -11,6 +18,7 @@ body {
     display: inline-block;
     float: right;
     letter-spacing: 2px;
+    clear: right;
 }
 
 .intro h3{
@@ -39,13 +47,9 @@ body {
      background-image: url("../img/intro1.jpeg");
      height: 650px;
      background-position: center;
-     background-size: contain;
+     background-size: cover;
      background-attachment: fixed;
      background-repeat: no-repeat;
- }
-
- .navbar img {
-     width: 100%;
  }
 
 .about-description {
@@ -82,7 +86,6 @@ body {
 
  #projects-menu {
      background-color: #ffffff;
-     padding: 15px
  }
 
  .project-description {
@@ -169,3 +172,33 @@ i a {
  .about-me {
      color: #ff6900;
  }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 576px) {
+    header {
+        background-size: contain;
+        max-height: 480px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    header {
+        background-size: contain;
+        max-height: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        background-size: contain;
+        max-height: 480px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    header {
+        background-size: contain;
+        max-height: 480px;
+    }
+}
+/*MEDIA QUERIS*/
