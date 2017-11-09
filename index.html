@@ -8,32 +8,45 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="bootstrap/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
 
 </head>
 
     <body>
-
         <div id="page">
             <header>
-                    <nav class="navbar navbar-inverse">
-                        <div class="container-fluid">
-                            <div class="navbar-header navbar-right">
-                            <ul class="nav navbar-nav">
-                                <li class="beta"><a href="#about-me-menu">Profil</a></li>
-                                <li class="beta"><a href="#experience-menu">Doświadczenie</a></li>
-                                <li class="beta"><a href="#projects-menu">Projekty</a></li>
-                                <li class="beta"><a href="#contact-menu">Kontakt</a></li>
+                <div class="header-section">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                        <a class="navbar-brand" href="#about-me-menu">Marcin Płużyński</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#about-me-menu">O mnie</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#experience-menu">Doświadczenie</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#projects-menu">Projekty</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#contact-menu">Kontakt</a>
+                                </li>
                             </ul>
-                            </div>
                         </div>
                     </nav>
-                <div class="intro">
-                    <h1>Marcin <span class="stronger">Płużyński</span></h1>
-                </div>
-                <div class="intro">
-                    <h3>junior <span class="stronger">frontend</span> developer</h3>
+                    <div class="intro">
+                        <h1>Marcin <span class="stronger">Płużyński</span></h1>
+                        <h3>junior <span class="stronger">frontend</span> developer</h3>
+                    </div>
                 </div>
             </header>
 
@@ -51,11 +64,9 @@
                                 non metus.</p>
                         </div>
                         <div class="col-md-4 about-photo">
-                            <img class="portret-photo" src="img/portret.png" alt="Zdjęcie">
+                            <img class="portret-photo" src="img/portret.png" alt="Zdjęcie" class="img-fluid">
                         </div>
                     </div>
-
-
             </section>
 
             <!--Experience-->
@@ -81,7 +92,7 @@
                     <p class="section-title">+ PROJEKTY</p>
                     <div class="row">
                         <div class="col-md-4">
-                            <a href="#"><img class="project-isa" src="img/isa-project.png" alt="Zdjęcie"></a>
+                            <a href="#"><img class="project-isa img-fluid" src="img/isa-project.png" alt="Zdjęcie"></a>
                             <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Suspendisse vel porttitor sapien, ac mattis est. Vivamus semper risus vitae neque
                                 pretium, et maximus erat sagittis.</p>
@@ -103,7 +114,7 @@
                             <p><i class="fa fa-github"><span class="contact-list"><a href="https://github.com/marcinpgit">Github</a></span></i></p>
                             <p><i class="fa fa-linkedin"><span class="contact-list"><a href="#">LinkedIn</a></span></i></p>
                         </div>
-                        <div class="col-sm-7 slideanim">
+                        <div class="col-sm-7">
                             <div class="row">
                                 <div class="col-sm-6 form-group">
                                     <input class="form-control" id="name" name="name" placeholder="Imię i Nazwisko oraz nazwa firmy" type="text" required>
@@ -115,7 +126,7 @@
                             <textarea class="form-control" id="comments" name="comments" placeholder="Treść" rows="5"></textarea><br>
                             <div class="row">
                                 <div class="col-sm-12 form-group">
-                                    <button class="btn btn-default pull-right contact-p" type="submit">Wyślij</button>
+                                    <button class="btn pull-right contact-p" type="submit">Wyślij</button>
                                 </div>
                             </div>
                         </div>
