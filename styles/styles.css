@@ -148,6 +148,10 @@ p {
      padding: 5px;
  }
 
+#experience-menu li {
+    font-weight: 400;
+}
+
 /*------------------------PROJECTS------------------------*/
 /*--------------------------------------------------------*/
 
@@ -157,7 +161,7 @@ p {
 
  #projects-menu .project-description {
      font-size: 15px;
-     font-weight: 200;
+     font-weight: 300;
      letter-spacing: 1px;
      margin-left: 2%;
      padding: 20px;
@@ -165,6 +169,11 @@ p {
 
  #projects-menu .project-isa {
      padding: 20px;
+ }
+
+ #projects-menu .project-isa {
+     filter: grayscale (80%);
+     -webkit-filter: grayscale(80%);
  }
 
 /*------------------------CONTACT------------------------*/
