@@ -43,9 +43,9 @@ p {
     background: url('../img/intro11.jpeg') no-repeat;
     height: 100vh;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
-    filter: grayscale(15%);
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
 }
 
 .header-section .bg-dark {
@@ -55,11 +55,12 @@ p {
 
 .header-section .navbar-light .navbar-brand {
     color: #e8e8e8;
+    font-weight: 400;
 }
 
 .header-section .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #e8e8e8;
-    font-weight: 200;
+    color: #F9F9F9;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -116,11 +117,6 @@ p {
     padding: 15px;
 }
 
-#about-me-menu .portret-photo {
-    text-align: center;
-    display: block;
-}
-
 /*------------------------EXPERIENCE------------------------*/
 /*----------------------------------------------------------*/
 
@@ -150,6 +146,10 @@ p {
 
 #experience-menu li {
     font-weight: 400;
+}
+
+#experience-menu .progress-bar-striped {
+    background-color: #9e9e9e;
 }
 
 /*------------------------PROJECTS------------------------*/
