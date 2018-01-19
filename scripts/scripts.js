@@ -1,5 +1,3 @@
-// smooth scrolling
-
 $(document).ready(function() {
     var scrollLink = $(".scroll");
 
@@ -10,3 +8,4 @@ $(document).ready(function() {
         }, 800 );
     });
 });
+
