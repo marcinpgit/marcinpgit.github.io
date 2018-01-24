@@ -2,16 +2,15 @@ AOS.init();
 
 const $page = $('body, html');
 const $scrollUpBttn = $('#go-up');
+const $navbarLinks = $('.navbar-nav').find('a');
 
-$(document).ready(function() {
-    var scrollLink = $('.scroll');
+function scrollToSection() {
+    const anchor = $(this).attr('href');
 
-    scrollLink.click(function(event) {
-        event.preventDefault();
-        $page.animate({scrollTop: $(this.hash).offset().top}, 800 );
-    });
-});
+    $page.animate({scrollTop: $(anchor).offset().top}, 800);
+}
 
+$navbarLinks.on('click', scrollToSection);
 
 function goUp() {
     $page.animate({scrollTop: 0}, 800);
