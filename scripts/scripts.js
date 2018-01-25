@@ -4,6 +4,7 @@ const $page = $('body, html');
 const $scrollUpBttn = $('#go-up');
 const $navbarLinks = $('.navbar-nav').find('a');
 
+// SMOOTH SCROLL TO SECTION
 function scrollToSection() {
     const anchor = $(this).attr('href');
 
@@ -12,6 +13,7 @@ function scrollToSection() {
 
 $navbarLinks.on('click', scrollToSection);
 
+// SCROLL TO TOP
 function goUp() {
     $page.animate({scrollTop: 0}, 800);
 }
