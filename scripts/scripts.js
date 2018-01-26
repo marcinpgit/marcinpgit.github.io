@@ -1,7 +1,7 @@
 AOS.init();
 
 const $page = $('body, html');
-const $scrollUpBttn = $('#go-up');
+const $scrollUpArrow = $('#arrow-up');
 const $navbarLinks = $('.navbar-nav').find('a');
 
 // SMOOTH SCROLL TO SECTION
@@ -13,10 +13,24 @@ function scrollToSection() {
 
 $navbarLinks.on('click', scrollToSection);
 
-// SCROLL TO TOP
-function goUp() {
-    $page.animate({scrollTop: 0}, 800);
+// SHOW/HIDE GO UP ARROW
+function showUpArrow() {
+    $(window).scrollTop() > 400 ?
+        $scrollUpArrow.fadeIn() :
+        $scrollUpArrow.fadeOut();
 }
 
-$scrollUpBttn.on('click', goUp);
+$(window).on('scroll', showUpArrow);
+
+// SCROLL TO TOP
+function scrollToTop() {
+    $page.animate({ scrollTop: 0}, 800);
+}
+
+$scrollUpArrow.on('click', scrollToTop);
+
+
+
+
+
 
