@@ -4,15 +4,6 @@ const $page = $('body, html');
 const $scrollUpArrow = $('#arrow-up');
 const $navbarLinks = $('.navbar-nav').find('a');
 
-// SMOOTH SCROLL TO SECTION
-function scrollToSection() {
-    const anchor = $(this).attr('href');
-
-    $page.animate({scrollTop: $(anchor).offset().top}, 800);
-}
-
-$navbarLinks.on('click', scrollToSection);
-
 // SHOW/HIDE GO UP ARROW
 function showUpArrow() {
     $(window).scrollTop() > 400 ?
@@ -29,8 +20,11 @@ function scrollToTop() {
 
 $scrollUpArrow.on('click', scrollToTop);
 
+// SMOOTH SCROLL TO SECTION
+function scrollToSection() {
+    const anchor = $(this).attr('href');
 
+    $page.animate({scrollTop: $(anchor).offset().top}, 800);
+}
 
-
-
-
+$navbarLinks.on('click', scrollToSection);
