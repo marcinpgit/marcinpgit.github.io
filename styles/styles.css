@@ -7,7 +7,7 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 body #page {
@@ -30,13 +30,13 @@ p {
     font-size: 16px;
 }
 
-#arrow-up {
+.arrow-up {
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
 }
 
-#arrow-up i {
+.arrow-up i {
     color: #6c757d;
     opacity: 0.5;
 }

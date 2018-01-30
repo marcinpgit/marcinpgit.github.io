@@ -1,30 +1,29 @@
 AOS.init();
 
 const $page = $('body, html');
-const $scrollUpArrow = $('#arrow-up');
+const $scrollUpArrow = $('.arrow-up');
 const $navbarLinks = $('.navbar-nav').find('a');
 
-// SHOW/HIDE GO UP ARROW
 function showUpArrow() {
-    $(window).scrollTop() > 400 ?
+    $window = $(window).scrollTop();
+        $window > 400 ?
         $scrollUpArrow.fadeIn() :
         $scrollUpArrow.fadeOut();
 }
 
-$(window).on('scroll', showUpArrow);
-
-// SCROLL TO TOP
 function scrollToTop() {
     $page.animate({ scrollTop: 0}, 800);
 }
 
-$scrollUpArrow.on('click', scrollToTop);
-
-// SMOOTH SCROLL TO SECTION
 function scrollToSection() {
     const anchor = $(this).attr('href');
 
     $page.animate({scrollTop: $(anchor).offset().top}, 800);
 }
+
+
+$(window).on('scroll', showUpArrow);
+
+$scrollUpArrow.on('click', scrollToTop);
 
 $navbarLinks.on('click', scrollToSection);
