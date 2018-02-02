@@ -34,13 +34,20 @@ body #page {
     margin: 1%;
 }
 
+.btn-secondary {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    opacity: 0.7;
+}
+
 /*HEADER*/
 .intro-section {
     background-image: url("../img/pic1.jpg");
     background-size: cover;
     height: 100vh;
-    filter: grayscale (50%);
-    -webkit-filter: grayscale(50%);
+    filter: grayscale (80%);
+    -webkit-filter: grayscale(80%);
 }
 
 .intro-section .navbar-logo {
@@ -178,12 +185,19 @@ body #page {
     height: 100vh;
 }
 
+@media screen and (max-width: 768px) {
+    .features-section {
+        height: auto;
+    }
+}
+
 #features .features-container {
     margin-top: 5%;
     background-color: rgba(216, 216, 216, 0.6);
     margin-right: 0.5%;
     padding: 0.5%;
 }
+
 /*FOOTER*/
 #footer-container .footer-description{
     height: 35px;
@@ -195,3 +209,4 @@ body #page {
     letter-spacing: 3px;
     margin: 0px;
 }
+
