@@ -5,7 +5,7 @@ const $scrollUpArrow = $('.arrow-up');
 const $navbarLinks = $('.navbar-nav').find('a');
 
 function showUpArrow() {
-    $window = $(window).scrollTop();
+        $window = $(window).scrollTop();
         $window > 400 ?
         $scrollUpArrow.fadeIn() :
         $scrollUpArrow.fadeOut();
