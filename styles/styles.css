@@ -162,12 +162,12 @@ p {
 }
 
 #projects .project-isa {
-    filter: grayscale(80%);
-    -webkit-filter: grayscale(80%);
+    filter: grayscale(45%);
+    -webkit-filter: grayscale(45%);
 }
 
 #projects .project-container {
-    box-shadow: 10px 10px 10px #888888;
+    box-shadow: 10px 10px 10px #C9C9C9;
     margin: 0.5%;
 }
 
