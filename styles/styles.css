@@ -167,7 +167,7 @@ p {
 }
 
 #projects .project-container {
-    background-color: rgba(216, 216, 216, 0.7);
+    box-shadow: 10px 10px 10px #888888;
     margin: 0.5%;
 }
 
