@@ -44,7 +44,7 @@ p {
 }
 
 .header-section {
-    background: url('../img/intro5.jpg');
+    background: url('../img/intro6.png');
     height: 100vh;
     background-size: cover;
 }
@@ -172,7 +172,7 @@ p {
 }
 
 #contact {
-    background-color: #EFE3E4;
+    background-color: #CEFFF7;
 }
 
 #contact .contact-p {
