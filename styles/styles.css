@@ -102,8 +102,11 @@ p {
 }
 
 #about-me .portret-photo {
-    float: right;
-    height: 50%;
+    width: 70%;
+    margin-top: 60px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #experience {
@@ -257,9 +260,16 @@ p {
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 1280px){
+@media screen and (min-width: 576px) and (max-width: 1280px) {
     #experience .exp-list {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #about-me .portret-photo {
+        width: 40%;
+        margin-top: 5px;
     }
 }
 
