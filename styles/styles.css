@@ -93,13 +93,14 @@ p {
 }
 
 .intro-notebook {
+    opacity: 0.7;
     position: absolute;
-    top: 50%;
-    left: 60%;
+    bottom: 5%;
+    right: 5%;
 }
 
 .intro-notebook img {
-    width: 60%;
+    width: 67%
 }
 
 .stronger {
@@ -258,11 +259,16 @@ p {
         padding: 5px;
         letter-spacing: 2px;
         border-radius: 3px;
+        margin-bottom: 4%;
     }
 
     .intro h3 {
         padding: 3px;
         border-radius: 3px;
+    }
+    #about-me .portret-photo {
+        width: 40%;
+        margin-top: 5px;
     }
 }
 
@@ -270,6 +276,8 @@ p {
     #experience .exp-list {
         padding: 0;
     }
+    .intro h1 {
+        margin-bottom: 4%;
 }
 
 @media screen and (min-width: 576px) and (max-width: 1280px) {
@@ -278,10 +286,12 @@ p {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
     #about-me .portret-photo {
         width: 40%;
         margin-top: 5px;
     }
+    .intro-notebook {
+        right: 0;
+    }
 }
-
