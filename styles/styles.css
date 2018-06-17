@@ -126,6 +126,11 @@ a.nav-link.scroll {
     margin-left: auto;
 }
 
+.dupa {
+    display: flex;
+    justify-content: space-between;
+}
+
 #experience {
     background-color: #FFFFFF;
 }
@@ -138,6 +143,8 @@ a.nav-link.scroll {
 
 #experience li {
     margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 #experience .exp-list {
@@ -149,16 +156,6 @@ a.nav-link.scroll {
 #experience .exp {
     padding-top: 60px;
 }
-
-#experience li {
-    font-weight: 400;
-}
-
-#experience .progress-bar {
-    background-color: #A8A8A8;
-    height: 7px;
-}
-
 
 #projects {
     background-color: #FFFFFF;
@@ -288,7 +285,7 @@ a.nav-link.scroll {
 
 @media screen and (max-width: 576px) {
     #about-me .portret-photo {
-        width: 40%;
+        width: 50%;
         margin-top: 5px;
     }
 }
