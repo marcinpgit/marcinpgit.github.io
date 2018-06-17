@@ -48,59 +48,53 @@ p {
 }
 
 .header-section {
-    background: url('../img/intro6.png');
-    height: 100vh;
+    background: url('../img/intro-laptop.jpeg');
     background-size: cover;
+    /* background-position-y: center; */
 }
 
 .header-section .bg-dark {
-    background-color: rgba(47, 53, 58, 0.2)!important;
+    background-color: #ffffff !important;
+    padding: 30px;
     z-index: 999;
 }
 
 .header-section .navbar-light .navbar-brand {
-    color: #e8e8e8;
-    font-weight: 300;
+    color: #000000;
+    font-weight: 400;
     letter-spacing: 3px;
     font-size: 12px;
 }
 
 .header-section .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #F9F9F9;
-    font-weight: 100;
+    color: #000000;
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
 .intro {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 580px;
 }
 
-.intro h1 {
-    font-size: 65px;
+.intro-header {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.intro-name {
+    font-size: 55px;
     font-weight: 200;
     letter-spacing: 4px;
-    margin-bottom: 10%;
 }
 
-.intro h3{
+.intro-dev{
     font-weight: 100;
     font-size: 23px;
-    background-color: rgba(255,255,255,0.5);
-    padding: 5px;
-}
-
-.intro-notebook {
-    opacity: 0.7;
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-.intro-notebook img {
-    width: 67%
+    margin-bottom: 50px;
 }
 
 .stronger {
@@ -241,30 +235,25 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-    .intro h1 {
-
+    .intro-name {
         padding: 5px;
         letter-spacing: 1px;
-        border-radius: 2px;
     }
 
-    .intro h3 {
+    .intro-dev {
         padding: 3px;
-        border-radius: 2px;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    .intro h1 {
+    .intro-name {
         padding: 5px;
         letter-spacing: 2px;
-        border-radius: 3px;
         margin-bottom: 4%;
     }
 
-    .intro h3 {
+    .intro-dev {
         padding: 3px;
-        border-radius: 3px;
     }
     #about-me .portret-photo {
         width: 40%;
@@ -276,7 +265,7 @@ p {
     #experience .exp-list {
         padding: 0;
     }
-    .intro h1 {
+    .intro-name {
         margin-bottom: 4%;
     }
 }
@@ -291,8 +280,5 @@ p {
     #about-me .portret-photo {
         width: 40%;
         margin-top: 5px;
-    }
-    .intro-notebook {
-        right: 0;
     }
 }
