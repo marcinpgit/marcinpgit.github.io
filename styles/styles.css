@@ -71,6 +71,10 @@ p {
     letter-spacing: 2px;
 }
 
+a.nav-link.scroll {
+    color: red;
+}
+
 .intro {
     display: flex;
     flex-direction: column;
@@ -116,7 +120,6 @@ p {
 }
 
 #about-me .portret-photo {
-    width: 70%;
     margin-top: 60px;
     display: block;
     margin-right: auto;
@@ -153,6 +156,7 @@ p {
 
 #experience .progress-bar {
     background-color: #A8A8A8;
+    height: 7px;
 }
 
 
