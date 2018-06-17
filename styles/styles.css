@@ -50,7 +50,6 @@ p {
 .header-section {
     background: url('../img/intro-laptop.jpeg');
     background-size: cover;
-    /* background-position-y: center; */
 }
 
 .header-section .bg-dark {
@@ -76,25 +75,32 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    height: 580px;
+    justify-content: center;
+    height: 480px;
 }
 
 .intro-header {
-    font-size: 45px;
-    font-weight: 400;
+    font-size: 35px;
+    font-weight: 300;
+    background-color: #00b3a8;
+    color: #FBFBFF;
+    padding: 10px 25px;
+    border-radius: 5px;
 }
 
 .intro-name {
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 200;
     letter-spacing: 4px;
+    background-color: #00b3a8;
+    color: #FBFBFF;
+    padding: 10px 25px;
+    border-radius: 5px;
 }
 
 .intro-dev{
     font-weight: 100;
     font-size: 23px;
-    margin-bottom: 50px;
 }
 
 .stronger {
@@ -124,7 +130,7 @@ p {
 #experience i {
     font-size: 45px;
     padding: 20px;
-    color: #00A69A;
+    color: #00b3a8;
 }
 
 #experience li {
@@ -182,7 +188,7 @@ p {
 }
 
 #contact {
-    background-color: #C0F7F0;
+    background-color: #BAFFFA;
 }
 
 #contact .contact-p {
