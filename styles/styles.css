@@ -102,7 +102,7 @@ a.nav-link.scroll {
     border-radius: 5px;
 }
 
-.intro-dev{
+.intro-dev {
     font-weight: 100;
     font-size: 23px;
 }
@@ -126,26 +126,12 @@ a.nav-link.scroll {
     margin-left: auto;
 }
 
-
-
-
 .exp-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 
-.award-image {
-    width: 40%;
-}
-
-
-
-
-
-#experience {
-    background-color: #FFFFFF;
-}
 
 #experience i {
     font-size: 45px;
@@ -157,12 +143,6 @@ a.nav-link.scroll {
     margin-bottom: 15px;
     font-weight: 400;
     font-size: 15px;
-}
-
-#experience .exp-list {
-    list-style: none;
-    font-size: 18px;
-    font-weight: 200;
 }
 
 #experience .exp {
@@ -201,8 +181,8 @@ a.nav-link.scroll {
 }
 
 #contact {
-    background-color: #17528C;
-    color: white;
+    background-color: #2A5B8C;
+    color: #FBFBFF;
 }
 
 #contact .contact-p {
@@ -234,7 +214,12 @@ a.nav-link.scroll {
 #contact i a {
     text-decoration: none;
     padding: 5px;
-    color: white;
+    color: #FBFBFF;
+}
+
+.btn {
+    background-color: #00b3a8;
+    color: #FBFBFF;
 }
 
 #footer .footer-message {
