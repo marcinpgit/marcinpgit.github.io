@@ -178,10 +178,15 @@ a.nav-link.scroll {
 }
 
 #projects .project-container {
-    box-shadow: 8px 8px 8px #C9C9C9;
     border: 1px solid #D3D3D3;
     margin: 0.5%;
-    background-color: #F9F9F9
+    background-color: #FCFCFC
+}
+
+#projects .project-container:hover {
+    box-shadow: 8px 8px 8px #C9C9C9;
+    transition: all 1s;
+    background-color: #FFFFFF;
 }
 
 #contact {
