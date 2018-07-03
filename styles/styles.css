@@ -180,7 +180,8 @@ a.nav-link.scroll {
 #projects .project-container {
     border: 1px solid #D3D3D3;
     margin: 0.5%;
-    background-color: #FCFCFC
+    background-color: #FCFCFC;
+    border-radius: 3px;
 }
 
 #projects .project-container:hover {
